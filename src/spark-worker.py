@@ -36,14 +36,14 @@ schema_vehicle = StructType([
 
 
 
-postgres_url = "jdbc:postgresql://172.23.0.3:5432/admindb"
+postgres_url = "jdbc:postgresql://172.24.0.2:5432/admindb"
 postgres_properties = {
     "user": "admin",
     "password": "root",
     "driver": "org.postgresql.Driver"
 }
 
-host = "172.23.0.3"
+host = "172.24.0.2"
 database = "admindb"
 user = "admin"
 password = "root"

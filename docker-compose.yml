@@ -56,7 +56,7 @@ services:
   spark-master:
     image: bitnami/spark:latest
     volumes:
-      - ./spark-worker.py:/opt/bitnami/spark/spark-worker.py
+      - ./src/spark-worker.py:/opt/bitnami/spark/spark-worker.py
     command: bin/spark-class org.apache.spark.deploy.master.Master
     ports:
       - "9090:8080"
@@ -91,7 +91,7 @@ services:
       - networklab
   postgres:
     image: postgres:latest
-    container_name: postgres
+    container_name: postgres_dev
     restart: always
     ports:
       - "5432:5432"

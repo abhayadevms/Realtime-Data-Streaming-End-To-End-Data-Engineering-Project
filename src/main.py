@@ -72,8 +72,8 @@ class KafkaProducer:
             self.producer.flush()
             time.sleep(delay_sec)
 
-def main(producer):
-    csv_file_path = 'weatherHistory.csv'
+def main(producer, csv_file_path ):
+    
     csv_handler = CSVHandler(csv_file_path)
     csv_data = csv_handler.read_csv()
 
@@ -85,12 +85,15 @@ def main(producer):
 
 if __name__ == "__main__":
     try:
+
+        csv_file_path = './data/weatherHistory.csv'
+
         producer_config = {
             'bootstrap.servers': KAFKA_SERVER,
             'error_cb': lambda err: print(f'Kafka error: {err}'),
         }
 
         producer = SerializingProducer(producer_config)
-        main(producer)
+        main(producer,  csv_file_path)
     except Exception as e:
         print(f"Error: {e}")
