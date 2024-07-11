@@ -8,6 +8,8 @@ __pycache__/
 
 # Distribution / packaging
 .Python
+pgdata/
+grafana_data
 build/
 develop-eggs/
 dist/
