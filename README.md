@@ -87,4 +87,12 @@ docker exec -it realtime-data-streaming-end-to-end-data-engineering-project-spar
 
 ![grafana output](./image/output.png)
 
+### Contributing
+- Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
+
+### License
+- This project is licensed under the Apache License 2.0. See the LICENSE file for more details.
+
+
+
 
