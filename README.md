@@ -85,4 +85,6 @@ docker exec -it realtime-data-streaming-end-to-end-data-engineering-project-spar
 ```
 ### grafana  output 
 
+![grafana output](./image/output.png)
+
 
