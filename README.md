@@ -8,7 +8,6 @@ This project demonstrates an end-to-end data engineering pipeline for real-time 
 - [Architecture](#architecture)
 - [Components](#components)
 - [Setup and Installation](#setup-and-installation)
-- [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -22,12 +21,6 @@ The primary goal of this project is to create a scalable and efficient data pipe
 
 The architecture of the project consists of the following components:
 
-1. **Data Source**: Simulated data sources generating real-time data streams, including data from `weatherhistory.csv`.
-2. **Apache Kafka**: A distributed streaming platform used for building real-time data pipelines and streaming applications.
-3. **Apache Spark**: A unified analytics engine for large-scale data processing, used here for real-time data processing.
-4. **PostgreSQL**: A relational database used as the data sink to store processed data.
-5. **Grafana**: A platform for monitoring and observability, used here for visualization and analysis of the data stored in PostgreSQL.
-6. **Python**: Used for scripting and data manipulation.
 
 ## Components
 
